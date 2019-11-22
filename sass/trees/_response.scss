@@ -1,0 +1,192 @@
+//mixins
+// common styles in tablets, mobile...
+@mixin commonStyles() {
+  #inf-nav{
+    border-radius: 0 !important;
+  }
+  // intro
+  section.inf-info{
+    .imgControl{
+      display: flex;
+      justify-content: center;
+    }
+    .inf-content-intro{
+      >img{
+        width: 150px !important;
+        height: 150px !important;
+        margin: 5% 0;
+      }
+      >h2{
+        margin-top: 5%;
+        font-size: 25px;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+  // small box
+  .smallBox{
+    .inf-content-sm-box{
+      margin: 8%;
+      img{
+        width: 110px !important;
+        height: 110px !important;
+      }
+      h3{
+
+      }
+      p{
+
+      }
+      &:last-child{
+        margin-bottom: 20%;
+      }
+    }
+  }
+
+  //andrew nageh
+  .andrew-n{
+    margin-top: 10%;
+  }
+}
+
+
+/*
+
+  ##Device = Desktops
+
+  ##Screen = 1281px to higher resolution desktops
+
+*/
+
+
+
+
+@media (min-width: 1281px) {
+
+
+
+  //CSS
+
+
+
+}
+
+
+
+
+/*
+
+  ##Device = Laptops, Desktops
+
+  ##Screen = B/w 1025px to 1280px
+
+*/
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+
+  //CSS
+
+
+
+}
+
+
+
+
+/*
+
+  ##Device = Tablets, Ipads (portrait)
+
+  ##Screen = B/w 768px to 1024px
+
+*/
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  @include commonStyles();
+
+
+
+}
+
+
+
+
+/*
+
+  ##Device = Tablets, Ipads (landscape)
+
+  ##Screen = B/w 768px to 1024px
+
+*/
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  @include commonStyles();
+
+
+
+
+}
+
+
+
+
+/*
+
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+
+  ##Screen = B/w 481px to 767px
+
+*/
+
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  @include commonStyles();
+  .inf-top {
+    top: 0 !important;
+  }
+
+
+}
+
+
+
+
+/*
+
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+
+  ##Screen = B/w 320px to 479px
+
+*/
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  @include commonStyles();
+  .inf-top {
+    top: 0 !important;
+  }
+
+
+}

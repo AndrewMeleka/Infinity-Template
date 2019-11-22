@@ -1,0 +1,152 @@
+// imports
+@import "trees/variables";
+
+// ---------------------
+// Header Section
+// ---------------------
+#inf-heading{
+  position: relative;
+  background: $blue;
+  @extend %flexCenter;
+}
+.header-overlay{
+  background: $blue;
+  background: -moz-linear-gradient(to top, $offWhite , $blue);
+  background: -webkit-linear-gradient(to right, $offWhite , $blue);
+  background: linear-gradient(to top, $offWhite , $blue);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+// pattern
+#inf-pattern{
+  position: absolute;
+  z-index: 2;
+}
+// intro text
+.introContents{
+  position: relative;
+  z-index: 999;
+}
+
+// ---------------------
+// Features Section
+// ---------------------
+#inf-feta{
+  .allFeta{
+    position: relative;
+    top: -100px;
+    z-index: 99;
+  }
+}
+
+
+// ---------------------
+// UI/UX Section
+// ---------------------
+#inf-ui-ux{
+  background: $blue;
+  background: -webkit-linear-gradient(to right, $blue , $blue2);
+  background: linear-gradient(to right, $blue , $blue2);
+  .inf-text{
+    h2{
+      color: $white;
+    }
+    p{
+      color: $offWhite+c7 !important;
+    }
+  }
+}
+
+// ---------------------
+// Front End Section
+// ---------------------
+#inf-frontend{
+  background: $blue;
+  background: -webkit-linear-gradient(to right, $blue , $green);
+  background: linear-gradient(to right, $blue , $green);
+  .inf-text{
+    h2{
+      color: $white;
+    }
+    p{
+      color: $offWhite+c7 !important;
+    }
+  }
+}
+
+// ---------------------
+// Back End Section
+// ---------------------
+#inf-backend{
+  background: $blue;
+  background: -webkit-linear-gradient(to right, $blue , $red);
+  background: linear-gradient(to right, $blue , $red);
+  .inf-text{
+    h2{
+      color: $white;
+    }
+    p{
+      color: $offWhite+c7 !important;
+    }
+  }
+}
+
+// ---------------------
+// About Section
+// ---------------------
+#inf-about{
+  margin: 10% 0;
+  .inf-content-intro{
+    @extend %flexCenter;
+    >img{
+      border-radius: 200px;
+      height: 400px !important;
+      width: 300px !important;
+      transition: all 1s linear;
+      &:hover{
+        border-radius: 15px;
+      }
+    }
+  }
+  .textAndrew{
+    @extend %flexCenter;
+    flex-direction: column;
+    .inf-content-intro{
+      flex-direction: column;
+    }
+  }
+}
+
+
+// ---------------------
+// Footer
+// ---------------------
+#inf-footer{
+  @extend %flexCenter;
+  background: $blue;
+  background: -moz-linear-gradient(to top, $blue , $offWhite);
+  background: -webkit-linear-gradient(to right, $blue , $offWhite);
+  background: linear-gradient(to top, $blue , $offWhite);
+  padding: 2%;
+  >div{
+    a{
+      color: $white;
+    }
+  }
+}
+
+
+
+// ---------------------
+// Placeholders
+// ---------------------
+%flexCenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

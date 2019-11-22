@@ -1,0 +1,85 @@
+#inf-heading {
+  position: relative;
+  background: #007bff; }
+
+.header-overlay {
+  background: #007bff;
+  background: -moz-linear-gradient(to top, #fdfcfc, #007bff);
+  background: -webkit-linear-gradient(to right, #fdfcfc, #007bff);
+  background: linear-gradient(to top, #fdfcfc, #007bff);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1; }
+
+#inf-pattern {
+  position: absolute;
+  z-index: 2; }
+
+.introContents {
+  position: relative;
+  z-index: 999; }
+
+#inf-feta .allFeta {
+  position: relative;
+  top: -100px;
+  z-index: 99; }
+
+#inf-ui-ux {
+  background: #007bff;
+  background: -webkit-linear-gradient(to right, #007bff, #24D9F8);
+  background: linear-gradient(to right, #007bff, #24D9F8); }
+  #inf-ui-ux .inf-text h2 {
+    color: #ffffff; }
+  #inf-ui-ux .inf-text p {
+    color: #fdfcfcc7 !important; }
+
+#inf-frontend {
+  background: #007bff;
+  background: -webkit-linear-gradient(to right, #007bff, #28a745);
+  background: linear-gradient(to right, #007bff, #28a745); }
+  #inf-frontend .inf-text h2 {
+    color: #ffffff; }
+  #inf-frontend .inf-text p {
+    color: #fdfcfcc7 !important; }
+
+#inf-backend {
+  background: #007bff;
+  background: -webkit-linear-gradient(to right, #007bff, #dc3545);
+  background: linear-gradient(to right, #007bff, #dc3545); }
+  #inf-backend .inf-text h2 {
+    color: #ffffff; }
+  #inf-backend .inf-text p {
+    color: #fdfcfcc7 !important; }
+
+#inf-about {
+  margin: 10% 0; }
+  #inf-about .inf-content-intro > img {
+    border-radius: 200px;
+    height: 400px !important;
+    width: 300px !important;
+    transition: all 1s linear; }
+    #inf-about .inf-content-intro > img:hover {
+      border-radius: 15px; }
+  #inf-about .textAndrew {
+    flex-direction: column; }
+    #inf-about .textAndrew .inf-content-intro {
+      flex-direction: column; }
+
+#inf-footer {
+  background: #007bff;
+  background: -moz-linear-gradient(to top, #007bff, #fdfcfc);
+  background: -webkit-linear-gradient(to right, #007bff, #fdfcfc);
+  background: linear-gradient(to top, #007bff, #fdfcfc);
+  padding: 2%; }
+  #inf-footer > div a {
+    color: #ffffff; }
+
+#inf-heading, #inf-about .inf-content-intro, #inf-about .textAndrew, #inf-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=home.css.map */

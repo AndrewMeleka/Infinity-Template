@@ -1,0 +1,177 @@
+// imports
+@import "trees/variables";
+
+// ---------------------
+// Default Styles
+// ---------------------
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: $offWhite;
+}
+p{
+  color: $offBlack+c7 !important;
+  font-size: 18px;
+}
+.inf-top {
+  top: 1%;
+}
+.header-overlay{
+  background: #007CFF;
+  background: -webkit-linear-gradient(to right, $blue , $black);
+  background: linear-gradient(to top, $offWhite , $blue);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.myLine{
+  border-bottom: 1px solid #4a535d2b;
+}
+
+// large box
+.inf-box{
+  margin-bottom: 8%;
+  cursor: default;
+  .inf-content-box{
+    background-color: $white;
+    color: $black;
+    font-size: 26px;
+    height: 500px;
+    overflow: auto;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    >img{
+      height: 50px;
+      width: 50px;
+      margin: 5% 0;
+    }
+    h3{
+      margin: 5% 0;
+    }
+    p{
+      text-align: center;
+    }
+  }
+}
+.inf-contents{
+  padding-bottom: 12% !important;
+}
+// small box
+.smallBox{
+  .inf-content-sm-box{
+    height: 450px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    border-radius: 20px;
+    box-shadow: 14px 14px 0 0 #ffffff5e;
+    transition: all .4s linear;
+    &:hover{
+      box-shadow: 8px 8px 0 0 #ffffff5e;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 4%;
+    }
+    h3{
+      text-transform: capitalize;
+    }
+    p{
+      margin:5% 0;
+    }
+    ul{
+      margin:5% 0;
+      >li{
+        color: $offBlack+c7 !important;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// intro
+section.inf-info{
+  margin: 5% 0 15% 0;
+  .inf-content-intro{
+    >img{
+      width: 400px;
+      height: 400px;
+    }
+    >h2{
+      margin-bottom: 5%;
+      text-transform: capitalize;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+
+//text heading in any section
+.inf-text{
+  text-align: center;
+  padding: 10% 0;
+  h2{
+    text-transform: uppercase;
+  }
+  p{
+    text-transform: capitalize;
+  }
+}
+
+
+
+// ---------------------
+// Nav Bar
+// ---------------------
+#inf-nav{
+  padding: .5%;
+  transition: $defTransition;
+}
+// logo
+#infCounter{
+  transition: $defTransition;
+  color: $black;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+//links
+.navbar-nav {
+  >.active{
+    a{
+      font-weight: bold;
+      color: $blue !important;
+    }
+  }
+  >.nav-item{
+    >a{
+      transition: $defTransition;
+      &:hover{
+        color: $blue !important;
+      }
+    }
+  }
+}
+
+
+// ---------------------
+// For Responsive
+// ---------------------
+
+@import "trees/response";
+
+
